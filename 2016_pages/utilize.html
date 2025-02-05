@@ -1,33 +1,39 @@
-<!-- About Section -->
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">About</h2>
-                <h3 class="section-subheading text-muted"></h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="timeline">
-                    {% for about_data in site.data.twenty_16.home_about_data %}
-                        <li class="{{ about_data.inverted }}">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="../css/2016_style/img/TBD.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>{{ about_data.name }}</h4>
-                                </div>
-                                <div class="timeline-heading">
-                                    <p class="text-muted">{{ about_data.info }}</p>
-                                </div>
-                                <a href="" class="page-scroll btn btn-sm">Learn More</a>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+---
+layout: 2016_default
+permalink: /2016/utilize
+title: 사업개요
+---
+<!--background color-->
+<script type="text/javascript">
+    document.write ('<body style="background: Gainsboro fixed;">')
+</script>
+
+<div class="black-frame about">
+    <h1>{{ page.title }}</h1>
+
+    <div class="icon-about">
+        <p>
+            내용내용내용내용내용
+        </p>
     </div>
-</section>
+
+    <h2 class="first">Theme</h2>
+
+    <p>
+        Your Theme
+    </p>
+
+    <h2 class="second">Vision</h2>
+
+    <p>
+        Your Vision
+    </p>
+
+    <h2 class="third">Mission</h2>
+
+    <p>
+        Your Mission
+    </p>
+
+
+</div>
