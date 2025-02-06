@@ -11,22 +11,9 @@ title: Business Introduction
     <div class="event black-frame">
       <h1>{{ page.title }}</h1>
 
-        <h2>Day 1</h2>
-        <table class="agenda">
-            <thead>
-                <tr>
-                    <th class="row-1 agenda-time" style="text-align: center;">Time</th>
-                    <th class="row-2 agenda-activity" style="text-align: center;">Activity</th>
-                </tr>
-            </thead>
+        <h2>참여기업</h2>
 
-            {% for agenda in site.data.twenty_16.agendas_1 %}
-                <tr>
-                    <td>{{ agenda.time }}</td>
-                    <td>{{ agenda.info }}</td>
-                </tr> 
-            {% endfor %}
-        </table>
+        {% include 2016_data/sponsors.html %}
 
         <h2>Day 2</h2>
         <table class="agenda">
