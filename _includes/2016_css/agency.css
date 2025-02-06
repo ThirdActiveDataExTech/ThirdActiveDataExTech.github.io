@@ -247,7 +247,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: {{ site.data.template.font.primary }};
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #FFFFFF;
 }
 
