@@ -154,7 +154,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary .badge {
-    color: #{{ site.data.template.color.primary }};
+    color: #ff0000;
     background-color: #fff;
 }
 
@@ -171,8 +171,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-sm, .btn-xl {
-    color: #ffff00;
-    background-color: #ffff00;
+    color: #ff0000;
+    background-color: #9900ff;
     border-color: #{{ site.data.template.color.primary }};
     border-radius: 3px;
     text-transform: uppercase;
@@ -273,7 +273,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #ff0000;
 }
 
 .navbar-default .nav li a {
@@ -571,7 +571,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #FFFFFF;
 }
 
 .timeline>li .timeline-image h4 {
