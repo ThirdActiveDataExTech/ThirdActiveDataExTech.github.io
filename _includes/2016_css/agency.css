@@ -171,8 +171,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-sm, .btn-xl {
-    color: #ff0000;
-    background-color: #9900ff;
+    color: #ffffff;
+    background-color: #111d6e;
     border-color: #{{ site.data.template.color.primary }};
     border-radius: 3px;
     text-transform: uppercase;
