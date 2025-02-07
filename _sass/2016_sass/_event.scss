@@ -20,18 +20,23 @@
   h1 {
     margin: 0;
     color: black;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 2px;
     width: 70%;
   }
 
   table {
     width: 70%;
     border-collapse: collapse;
+    padding-left: 40px;
   }
   th, td {
     border: 1px solid #3c3c3c;
     padding: 10px;
     text-align: left;
+  }
+
+  row {
+    margin-top: 20px;
   }
 }
 
