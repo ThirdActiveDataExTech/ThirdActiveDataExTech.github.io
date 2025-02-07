@@ -32,16 +32,18 @@
   }
 
   table {
-    width: 70%;
+    width: 100%;
     border-collapse: collapse;
     margin-left: 40px;
   }
   th {
+    width: 10%;
     border: 1px solid #3c3c3c;
     padding: 10px;
     text-align: left;
   }
   td {
+    width: 70%;
     border: 1px solid #3c3c3c;
     padding: 10px;
     text-align: left;
