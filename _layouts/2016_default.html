@@ -4,7 +4,6 @@
   <style type="text/css">
     /*INCLUDE MAIN CSS FILE*/
     {% capture criticalcss %}
-    {% include basic.scss %}
       {% include /2016_css/critical.scss %}
     {% endcapture %}
     {{ criticalcss | scssify }}
