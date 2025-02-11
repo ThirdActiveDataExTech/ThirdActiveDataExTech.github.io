@@ -2,9 +2,13 @@
   padding: 5%;
   margin: 100px 15vw 60px 15vw;
   img {
-    margin-left: 22px;
-    width: 100%;
+    width: 10%;
+    height: auto;
   }
+  .company-logo img {
+     margin-left: 22px;
+     width: 100%;
+   }
   a {
     color: darkblue;
   }
