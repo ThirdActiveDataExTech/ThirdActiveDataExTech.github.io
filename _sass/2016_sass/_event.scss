@@ -34,7 +34,6 @@
     padding: 10px 10px 20px 2px;
     width: 70%;
   }
-
   table {
     width: 90%;
     border-collapse: collapse;
@@ -45,7 +44,21 @@
     padding: 10px;
     text-align: left;
   }
-
+  p.context1 {
+    margin-left: 40px
+  }
+  p.context1-title {
+    margin: 10px 0 0 40px
+  }
+  p.context2 {
+    margin-left: 45px
+  }
+  p.context3 {
+    margin-left: 50px
+  }
+  p.context4 {
+    margin-left: 55px
+  }
 }
 
 @media screen and (max-width : 1200px){
