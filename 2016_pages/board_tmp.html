@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 게시판</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 60%;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        .board-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #eee;
+        }
+        .input-container {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>간단한 게시판</h2>
+    <div class="board-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody id="board-list">
+                <!-- 게시글 목록 -->
+            </tbody>
+        </table>
+
+        <div class="input-container">
+            <label for="title"><input type="text" id="title" placeholder="제목"></label>
+            <label for="author"><input type="text" id="author" placeholder="작성자"></label>
+            <label for="content"><textarea id="content" placeholder="내용"></textarea></label>
+            <button onclick="addPost()">글 작성</button>
+        </div>
+    </div>
+
+    <script>
+        let postId = 1;
+        const boardList = document.getElementById("board-list");
+
+        function addPost() {
+            const title = document.getElementById("title").value;
+            const author = document.getElementById("author").value;
+            const content = document.getElementById("content").value;
+            const date = new Date().toLocaleDateString();
+
+            if (!title || !author || !content) {
+                alert("모든 필드를 입력해주세요.");
+                return;
+            }
+
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${postId}</td>
+                <td><a href="#" onclick="viewPost('${title}', '${author}', '${content}', '${date}')">${title}</a></td>
+                <td>${author}</td>
+                <td>${date}</td>
+            `;
+            boardList.appendChild(row);
+
+            postId++;
+            document.getElementById("title").value = "";
+            document.getElementById("author").value = "";
+            document.getElementById("content").value = "";
+        }
+
+        function viewPost(title, author, content, date) {
+            alert(`제목: ${title}\n작성자: ${author}\n날짜: ${date}\n\n내용:\n${content}`);
+        }
+    </script>
+
+</body>
+</html>
