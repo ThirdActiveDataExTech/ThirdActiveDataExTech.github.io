@@ -15,16 +15,4 @@ title: 기술문서공유
     <a href="/files/TechnologyAndBusinessIssueReport.pdf" download="TechnologyAndBusinessIssueReport.pdf">
         <img class="small-logo" src="/css/2016_style/img/download_icon.png" alt="">
     </a>
-    <h2>test</h2>
-    <img class="small-logo" src="/css/2016_style/img/download_icon.png" alt="Download Image" onclick="downloadFile()">
-    <script>
-        function downloadFile() {
-            const link = document.createElement('a');
-            link.href = '/_data/platform_design';  // 다운로드할 파일 경로
-            link.download = '액티브 메타 데이터 기반 데이터 관리 통합 플랫폼 시스템 설계서.png';    // 다운로드될 파일 이름
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    </script>
 </div>
