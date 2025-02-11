@@ -1,80 +1,100 @@
 .event {
   padding: 5%;
   margin: 100px 15vw 60px 15vw;
-  img {
+
+  img.architecture-img {
+    margin-left: 22px;
+    width: 100%;
+  }
+
+  img.company-logo {
+    margin-left: 15px;
     width: 10%;
     height: auto;
   }
-  img.company-logo {
-     margin-left: 22px;
-     width: 100%;
-   }
+
   a {
     color: darkblue;
   }
+
   h2 {
     color: black;
     text-align: left;
     padding-top: 30px;
     padding-left: 10px;
   }
+
   h3 {
-    color: black; 
+    color: black;
     text-align: left;
     padding-top: 30px;
     padding-left: 20px;
   }
+
   p, ol {
     font-size: 110%;
     color: #1a242f;
   }
+
   h1 {
     margin: 0;
     color: black;
     padding: 10px 10px 20px 2px;
     width: 70%;
   }
+
   table {
     width: 90%;
     border-collapse: collapse;
     margin-left: 40px;
   }
+
   th, td {
     border: 1px solid #3c3c3c;
     padding: 10px;
     text-align: left;
   }
+
   p.context1 {
+    margin-left: 20px
+  }
+
+  p.context1-title {
+    margin: 10px 0 0 30px
+  }
+
+  p.context2 {
     margin-left: 40px
   }
-  p.context1-title {
-    margin: 10px 0 0 40px
-  }
-  p.context2 {
-    margin-left: 45px
-  }
+
   p.context3 {
     margin-left: 50px
   }
+
   p.context4 {
-    margin-left: 55px
+    margin-left: 60px
+  }
+
+  img.basic-logo {
+    margin-left: 20px;
+    width: 20%
   }
 }
 
-@media screen and (max-width : 1200px){
+@media screen and (max-width: 1200px) {
   .event {
-      margin: 100px 15px 60px 15px;
+    margin: 100px 15px 60px 15px;
   }
 }
 
-@media screen and (max-width : 760px){
+@media screen and (max-width: 760px) {
   .venue-map {
     iframe {
       height: 45vh;
     }
   }
   .event {
-      margin: 80px 10px 10px 10px;
+    margin: 80px 10px 10px 10px;
   }
   h1 {
     font-size: 130%;
