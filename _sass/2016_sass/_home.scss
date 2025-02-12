@@ -203,9 +203,6 @@ body, textarea {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  text-align: center;
-  position: fixed;
   margin: 50px 20px 50px 20px;
 
   .object {
@@ -216,5 +213,9 @@ body, textarea {
     box-sizing: border-box;
     margin: 10px auto;
     border: 2px solid #eee
+  }
+
+  div.col-xs-4 {
+    width: 100%
   }
 }
