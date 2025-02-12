@@ -5,7 +5,6 @@ img {
   -ms-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
-  user-drag: none;
   -webkit-touch-callout: none;
 }
 
@@ -62,7 +61,6 @@ body, textarea {
 
 /*backgound picture in home*/
 .home-background {
-  background: url('/css/2016_style/img/KLCC_bg.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
