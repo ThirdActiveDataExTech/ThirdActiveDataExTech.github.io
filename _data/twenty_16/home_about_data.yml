@@ -1,29 +1,23 @@
 - inverted: 
   img:  data.png
   name: 써드파티 데이터 수집
-  info: Read more about our Theme, Vision, and Mission
-  link: "/2016/about"
+  info: 인터넷 상에 흩어진 데이터를 필요에 따라 수집합니다.
+#  link: "project/intro"
 
-- inverted: timeline-inverted
-  img: icon-agenda.jpeg
-  name: Agenda
-  info: Check out the agenda
-  link: /2016/agenda
+- inverted:
+  img: analysis.png
+  name: 데이터 간 관계 생성
+  info: 데이터 간 관계를 생성하여 능동형 데이터 확장 기술을 제공합니다.
+#  link: "project/intro"
 
-- inverted: 
-  img: icon-team.jpeg
-  name: Team
-  info: Find out the team members
-  link: /2016/team
-
-- inverted: timeline-inverted
-  img: icon-venue.jpeg
-  name: Venue
-  info: Learn more about our location
-  link: /2016/venue
+- inverted:
+  img: parts.png
+  name: 방대한 적용
+  info: 써드파티 데이터가 필요한 다양한 분야에 활용이 가능합니다.
+#  link: /2016/venue
 
 - inverted: 
-  img: icon-faq.jpeg
-  name: FAQs
-  info: Have a Question? Many answers can be found right here in our FAQs
-  link: /2016/faqs
+  img: platform.png
+  name: 사용자 편의
+  info: 원하는 데이터를 간편히 얻을 수 있는 플랫폼을 제공합니다.
+#  link: /2016/faqs
