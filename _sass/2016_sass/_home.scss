@@ -204,6 +204,9 @@ body, textarea {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  text-align: center;
+  position: fixed;
   margin: 50px 20px 50px 20px;
 
   .object {
