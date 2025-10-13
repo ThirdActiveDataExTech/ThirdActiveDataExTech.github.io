@@ -4,14 +4,11 @@ permalink: /project/intro
 title: 프로젝트 소개
 ---
 <!--background color-->
-<script type="text/javascript">
-    document.write('<body style="background: Gainsboro; background-attachment: fixed;">')
-</script>
+<body style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); background-attachment: fixed;">
 
-<div class="event black-frame">
+<div class="event modern-frame">
     <h1 class="title">{{ page.title }}</h1>
 
-    <h1 class="title">{{ page.title }}</h1>
     <h2>프로젝트 목표</h2>
     <p class="context1">써드파티 데이터의 활용성 증대를 위해 지능적인 데이터 관계 분석 및 데이터 자동 연결 확장을 수행하는 액티브 메타데이터 기반 능동형 데이터 확장 기술 개발</p>
 
@@ -41,38 +38,85 @@ title: 프로젝트 소개
     </p>
 
     <h2>과제연구내용</h2>
-    <p class="context1-title">1. 액티브 메타데이터 구조 설계 및 처리 기술</p>
-    <p class="context2">
-        가. 데이터의 특성 및 관계를 포함하는 액티브 메타데이터 구조 설계<br>
-        나. 데이터 카탈로그 구성을 위한 액티브 메타데이터 처리 기술 개발<br>
-        다. 데이터 변화를 반영한 데이터 갱신 기능 지원 액티브 메타데이터 구성 기술 개발
-    </p>
-    <p class="context1-title">2. 액티브 메타데이터 기반 데이터 간 관계 생성 기술</p>
-    <p class="context2">
-        가. 액티브 메타데이터 기반 데이터 특징 추출 및 분석 기술 개발<br>
-        나. 인공지능 기반 데이터 간 상호 연관성 분석 기술 개발<br>
-        다. 데이터 패턴 모델링 및 네트워크 분석을 통한 데이터 간 관계 생성 기술 개발
-    </p>
-    <p class="context1-title">3. 지능형 데이터 자동 탐색 및 패키징 기술</p>
-    <p class="context2">
-        가. 액티브 메타데이터 기반 데이터 검색 기술 개발<br>
-        나. 데이터 활용 목적 기반 데이터 자동 탐색 기술 개발<br>
-        다. 탐색 데이터의 확장 통합 구성을 위한 능동형 데이터 확장 기술 개발<br>
-        라. 써드파티 데이터의 동적 변화 반영을 위한 데이터 파이프라인 자동 구성 기술 개발<br>
-        마. 데이터 제공의 신뢰성을 보장하는 능동형 데이터 패키징 기술 개발
-    </p>
-    <p class="context1-title">4. 써드파티 데이터 활용 환경 제공 통합 플랫폼 기술</p>
-    <p class="context2">
-        가. 다종 써드파티 데이터 연계형 액티브 메타데이터 생성 기술 개발<br>
-        나. 액티브 메타데이터 기반 데이터 관계 분석 및 자동 탐색 도구 개발<br>
-        다. 데이터의 특징 및 관계 분석 결과에 대한 데이터 시각화 기술 개발<br>
-        라. 데이터의 적합성 검증 및 공유 기술 개발
-    </p>
-    <p class="context1-title">5. 실증 시스템 구축 및 시범서비스 적용</p>
-    <p class="context2">
-        가. 능동형 데이터 확장 기술에 대한 수요 또는 수혜 기업 기관  연계형 실증 시스템 구축<br>
-        나. 이종 도메인 데이터 기반 능동형 데이터 확장 기술에 대한 시범서비스 적용<br>
-    </p>
+    
+    <div class="research-cards">
+        <!-- 1번 과제 -->
+        <div class="research-card">
+            <div class="card-header">
+                <div class="card-number">1</div>
+                <h3>액티브 메타데이터 구조 설계 및 처리 기술</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>데이터의 특성 및 관계를 포함하는 액티브 메타데이터 구조 설계</li>
+                    <li>데이터 카탈로그 구성을 위한 액티브 메타데이터 처리 기술 개발</li>
+                    <li>데이터 변화를 반영한 데이터 갱신 기능 지원 액티브 메타데이터 구성 기술 개발</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2번 과제 -->
+        <div class="research-card">
+            <div class="card-header">
+                <div class="card-number">2</div>
+                <h3>액티브 메타데이터 기반 데이터 간 관계 생성 기술</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>액티브 메타데이터 기반 데이터 특징 추출 및 분석 기술 개발</li>
+                    <li>인공지능 기반 데이터 간 상호 연관성 분석 기술 개발</li>
+                    <li>데이터 패턴 모델링 및 네트워크 분석을 통한 데이터 간 관계 생성 기술 개발</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3번 과제 -->
+        <div class="research-card">
+            <div class="card-header">
+                <div class="card-number">3</div>
+                <h3>지능형 데이터 자동 탐색 및 패키징 기술</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>액티브 메타데이터 기반 데이터 검색 기술 개발</li>
+                    <li>데이터 활용 목적 기반 데이터 자동 탐색 기술 개발</li>
+                    <li>탐색 데이터의 확장 통합 구성을 위한 능동형 데이터 확장 기술 개발</li>
+                    <li>써드파티 데이터의 동적 변화 반영을 위한 데이터 파이프라인 자동 구성 기술 개발</li>
+                    <li>데이터 제공의 신뢰성을 보장하는 능동형 데이터 패키징 기술 개발</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4번 과제 -->
+        <div class="research-card">
+            <div class="card-header">
+                <div class="card-number">4</div>
+                <h3>써드파티 데이터 활용 환경 제공 통합 플랫폼 기술</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>다종 써드파티 데이터 연계형 액티브 메타데이터 생성 기술 개발</li>
+                    <li>액티브 메타데이터 기반 데이터 관계 분석 및 자동 탐색 도구 개발</li>
+                    <li>데이터의 특징 및 관계 분석 결과에 대한 데이터 시각화 기술 개발</li>
+                    <li>데이터의 적합성 검증 및 공유 기술 개발</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 5번 과제 -->
+        <div class="research-card">
+            <div class="card-header">
+                <div class="card-number">5</div>
+                <h3>실증 시스템 구축 및 시범서비스 적용</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>능동형 데이터 확장 기술에 대한 수요 또는 수혜 기업 기관 연계형 실증 시스템 구축</li>
+                    <li>이종 도메인 데이터 기반 능동형 데이터 확장 기술에 대한 시범서비스 적용</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <p class="context3">1) 데이터 활용성 증대</p>
     <p class="context4">
         가) 동적으로 변화하는 데이터의 특성을 반영하여 통합적인 데이터 관리 체계를 구축하고 다종 데이터의 특성을 반영하여 복합분석이 가능한 기술 토대 마련 가능<br>
@@ -87,3 +131,174 @@ title: 프로젝트 소개
         라) 비 전문가도 데이터를 쉽게 확보하고 활용할 수 있는 생태계를 조성하여 4차산업혁명에 참여하는 데이터 과학자 저변확대 가능
     </p>
 </div>
+
+<style>
+    .modern-frame {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .modern-frame h1 {
+        color: #2c3e50;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 600;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .modern-frame h2 {
+        color: #34495e;
+        font-size: 1.8em;
+        margin: 40px 0 20px 0;
+        font-weight: 600;
+        border-left: 4px solid #3498db;
+        padding-left: 15px;
+        background: linear-gradient(90deg, rgba(52, 152, 219, 0.1) 0%, transparent 100%);
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .modern-frame .context1 {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 4px solid #28a745;
+        margin: 20px 0;
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #495057;
+    }
+
+    .research-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+        margin: 30px 0;
+    }
+
+    .research-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+    }
+
+    .research-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .card-number {
+        background: rgba(255, 255, 255, 0.2);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        flex-shrink: 0;
+    }
+
+    .card-header h3 {
+        margin: 0;
+        font-size: 1.1em;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+    .card-content ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .card-content li {
+        margin-bottom: 12px;
+        color: #495057;
+        line-height: 1.5;
+        position: relative;
+    }
+
+    .card-content li::marker {
+        color: #3498db;
+        font-weight: bold;
+    }
+
+    .context3 {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 4px solid #2196f3;
+        margin: 25px 0 15px 0;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #1565c0;
+    }
+
+    .context4 {
+        background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+        padding: 20px;
+        border-radius: 12px;
+        border-left: 4px solid #9c27b0;
+        margin: 15px 0 25px 0;
+        line-height: 1.6;
+        color: #4a148c;
+    }
+
+    .architecture-img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 768px) {
+        .modern-frame {
+            margin: 10px;
+            padding: 20px;
+        }
+        
+        .research-cards {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .modern-frame h1 {
+            font-size: 2em;
+        }
+        
+        .modern-frame h2 {
+            font-size: 1.5em;
+        }
+    }
+</style>
