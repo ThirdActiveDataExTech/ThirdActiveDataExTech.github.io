@@ -14,7 +14,7 @@ img {
 }
 
 body, textarea {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Noto Sans KR", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -25,9 +25,9 @@ body, textarea {
     width: 250px; 
     height: 250px;
   }
-  /*set all font to roboto*/
+  /*set all font consistently*/
   h1, h2, h3, p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Noto Sans KR", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
     margin: 0;
   }
@@ -204,7 +204,7 @@ body, textarea {
   margin: 50px 20px 50px 20px;
 
   div.footer {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans KR", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   .object {
