@@ -6,48 +6,61 @@ title: 공개 SW 활용
 <!--background color-->
 <body style="background-color:Gainsboro; background-attachment: fixed; background-position: center; background-repeat: no-repeat;">
 <div class="event black-frame">
-    <h1 class="title">{{ page.title }}</h1>
-    <h2>프로젝트 목표</h2>
-    <p class="context1">써드파티 데이터의 활용성 증대를 위해 지능적인 데이터 관계 분석 및 데이터 자동 연결 확장을 수행하는 액티브 메타데이터 기반 능동형 데이터 확장 기술 개발</p>
-
-    <h2>기본 아키텍처</h2>
-    <img class=architecture-img src="/css/2016_style/img/diagram/system_diagram.png" alt="">
-
-    <h2>시스템 개요도</h2>
-    <img class=architecture-img src="/css/2016_style/img/system-diagram.png" alt="">
-
-    <h2>기능적 특징</h2>
-    <p class="context1-title">1. 액티브 메타데이터 구조 설계 및 처리 기술</p>
-    <p class="context2">
-        데이터의 특성 및 관계를 포함하는 액티브 메타데이터 구조를 설계하고 액티브 메타데이터 처리를 통해 데이터 카탈로그를 구성한다.<br>
-        데이터 변화를 반영해 갱신하는 액티브 메타데이터 구성 기술을 제공한다.
+    
+    <h2>수요분석</h2>
+    <h3>주요 수요처 예상</h3>
+    <p class="context1">
+        - 새로운 데이터의 갱신 주기가 빠른 대량의 데이터 보유 공공기관<br>
+        - 다종 정형 반정형 비정형 공개 데이터를 활용하는 공공기관<br>
+        - 데이터 관리와 분석을 통해 디지털 전환을 추진하려는 기업<br>
+        - 분산 저장된 데이터를 활용해야 하는 데이터 분석 활용기업<br>
     </p>
-    <p class="context1-title">2. 액티브 메타데이터 기반 데이터 간 관계 생성 기술</p>
-    <p class="context2">
-        액티브 메타데이터를 기반으로 데이터의 특징을 추출하고 분석한다.<br>
-        인공지능을 기반으로 데이터 간 상호 연관성을 분석한다.
-    </p>
-    <p class="context1-title">3. 지능형 데이터 자동 탐색 및 패키징 기술</p>
-    <p class="context2">
-        액티브 메타데이터를 기반으로 데이터 자동 탐색 기술을 제공한다.<br>
-        데이터 활용을 목적을 기반으로 한 데이터 자동 탐색 기술을 제공한다.<br>
-        탐색 데이터의 확장 통합 구성을 위한 능동형 데이터 확장 기술을 제공한다.<br>
-        써드파티 데이터의 동적 변화 반영을 위해 데이터 파이프라인을 자동 구성하는 기술을 제공한다.<br>
-        데이터 제공의 신뢰성을 보장하기 위해 능동형 데이터 패키징 기술을 제공한다.
-    </p>
-    <p class="context1-title">4. 써드파티 데이터 활용 환경 제공 통합 플랫폼 기술</p>
-    <p class="context2">
-        다종 써드파티 데이터를 연계하는 액티브 메타데이터 생성 기술을 제공한다.<br>
-        액티브 메타데이터 기반 데이터 관계 분석 및 자동 탐색 도구를 제공한다.<br>
-        데이터의 특징 및 관계 분석 결과를 보여주는 데이터 시각화 기술을 제공한다.<br>
-        데이터의 적합성을 검증하고 공유하는 기술을 제공한다.
-    </p>
-    <h2>github</h2>
-        <img class="basic-logo" src="/css/2016_style/img/github_icon.png" href="https://github.com/ThirdActiveDataExTech" alt="">
+    <h3>수요 분야와 시나리오 예상</h3>
+    <table>
+        <colgroup>
+            <col style="width:90px;">
+            <col style="width:auto;">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>수요분야</th>
+            <th>수요별 예시</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>의료</td>
+            <td>질환 및 진단에 대한 임상, 영상 등의 정보 변화를 반영한 액티브 메타데이터를 활용하여 환자의 치료 방법을 검색 및 추천하는 서비스</td>
+        </tr>
+        <tr>
+            <td>교통</td>
+            <td>시간대별 교통량 정보, 교통사고 정보, 차량 이동량 정보와 같은 변화를 반영한 액티브 메타데이터 기반 인프라 정책 해결 서비스</td>
+        </tr>
+        <tr>
+            <td>데이터</td>
+            <td>환경/기후, 에너지, 교통 등 다종 데이터의 특성 및 연결 정보를 포함하는 액티브 메타데이터를 사용하여 사용자의 데이터 활용 목적에
+                맞는 통합 데이터를 구성하고 제공하는 서비스
+            </td>
+        </tr>
+        <tr>
+            <td>인공지능</td>
+            <td>인공지능 학습을 위한 멀티 모달리티 데이터셋 구성/제공 서비스 및 지식 그래프 기반 데이터 관계 분석 기술을 활용하는
+                인공지능 의사결정 서비스
+            </td>
+        </tr>
+        <tr>
+            <td>마케팅</td>
+            <td>고객 트랜잭션, 구매 패턴, 인구 통계등 다종 소스로부터 수집되는 고객 데이터를 액티브 메타데이터 기반으로 통합/분석하여
+                마케팅의 효율성을 개선하는 서비스
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
-<!--    <h2>user guide</h2>-->
-<!--    <h3>기능</h3>-->
-<!--    <h3>설치방법</h3>-->
-<!--    <h3>사용법</h3>-->
+    <h2>github repository</h2>
+        <a href="https://github.com/ThirdActiveDataExTech" target="_blank">
+            <img class="basic-logo" src="/css/2016_style/img/github_icon.png" alt="">
+        </a>
+
 </div>
 </body>
