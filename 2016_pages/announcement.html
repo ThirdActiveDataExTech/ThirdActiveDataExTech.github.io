@@ -4,19 +4,91 @@ permalink: /announcement
 title: 알림마당
 ---
 <!--background color-->
-<body style="background: Gainsboro no-repeat fixed center;">
-<div class="event black-frame">
+<body style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); background-attachment: fixed;">
+<div class="event modern-frame">
     <h1 class="title">{{ page.title }}</h1>
+    
     <h2>홍보</h2>
-    <hr style="border: 1px solid slategray;">
-    <h3>‘써드파티 데이터의 활용성 증대를 위한 액티브 메타데이터 기반 능동형 데이터 확장 기술 개발’ 과제에 대한 기사 발행<br></h3>
-    <a class="context1" href="https://www.newswire.co.kr/newsRead.php?no=989803">
-        기사 바로가기<br>
-    </a>
+    
+    <h3>'써드파티 데이터의 활용성 증대를 위한 액티브 메타데이터 기반 능동형 데이터 확장 기술 개발' 과제에 대한 기사 발행</h3>
+    <div class="context1">
+        <a href="https://www.newswire.co.kr/newsRead.php?no=989803" style="color: #3498db; text-decoration: none;">
+            기사 바로가기
+        </a>
+    </div>
     <img class="announce-img" src="/css/2016_style/img/press-release1.png" alt="">
-    <hr style="border: 1px solid slategray;">
+    
     <h3>2024년 11월 11일 개최된 ICT 기기산업 페스티벌 부스 참여</h3>
-    <p class="context1">
-        </p>
+    <div class="context1">
+        ICT 기기산업 페스티벌에 부스를 설치하여 과제를 홍보하고 참관객들과 소통하는 시간을 가졌습니다.
+    </div>
     <img class="announce-img" src="/css/2016_style/img/CCCR-promotion.png" alt="">
 </div>
+
+<style>
+    .modern-frame {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .modern-frame h1 {
+        color: #2c3e50;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 600;
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .modern-frame h2 {
+        color: #333333;
+        font-size: 1.8em;
+        margin: 40px 0 20px 0;
+        font-weight: 600;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modern-frame h3 {
+        color: #333333;
+        font-size: 1.3em;
+        margin: 30px 0 15px 0;
+        font-weight: 600;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modern-frame .context1 {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 0;
+        border: none;
+        margin: 20px 0;
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #666666;
+        text-align: left;
+    }
+
+    .announce-img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        display: block;
+    }
+</style>

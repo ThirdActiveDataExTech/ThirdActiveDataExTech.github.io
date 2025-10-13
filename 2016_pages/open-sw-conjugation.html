@@ -4,18 +4,18 @@ permalink: /openSW/conjugation
 title: 공개 SW 활용
 ---
 <!--background color-->
-<body style="background-color:Gainsboro; background-attachment: fixed; background-position: center; background-repeat: no-repeat;">
-<div class="event black-frame">
+<body style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); background-attachment: fixed;">
+<div class="event modern-frame">
     <h1 class="title">{{ page.title }}</h1>
 
     <h2>수요분석</h2>
     <h3>주요 수요처 예상</h3>
-    <p class="context1">
+    <div class="context1">
         - 새로운 데이터의 갱신 주기가 빠른 대량의 데이터 보유 공공기관<br>
         - 다종 정형 반정형 비정형 공개 데이터를 활용하는 공공기관<br>
         - 데이터 관리와 분석을 통해 디지털 전환을 추진하려는 기업<br>
         - 분산 저장된 데이터를 활용해야 하는 데이터 분석 활용기업<br>
-    </p>
+    </div>
     <h3>수요 분야와 시나리오 예상</h3>
     <table>
         <colgroup>
@@ -58,10 +58,97 @@ title: 공개 SW 활용
         </tbody>
     </table>
 
-    <h3>github repository</h3>
-        <a href="https://github.com/ThirdActiveDataExTech" target="_blank">
-            <img class="basic-logo" src="/css/2016_style/img/github_icon.png" alt="">
+    <h3>GitHub 저장소</h3>
+    <div class="context1">
+        <a href="https://github.com/ThirdActiveDataExTech" target="_blank" style="color: #3498db; text-decoration: none; font-size: 1.2em;">
+            <img class="basic-logo" src="/css/2016_style/img/github_icon.png" alt="GitHub Repository" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;">
+            https://github.com/ThirdActiveDataExTech
         </a>
+    </div>
 
 </div>
+
+<style>
+    .modern-frame {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .modern-frame h1 {
+        color: #2c3e50;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 600;
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .modern-frame h2 {
+        color: #333333;
+        font-size: 1.8em;
+        margin: 40px 0 20px 0;
+        font-weight: 600;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modern-frame h3 {
+        color: #333333;
+        font-size: 1.3em;
+        margin: 30px 0 15px 0;
+        font-weight: 600;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modern-frame .context1 {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 0;
+        border: none;
+        margin: 20px 0;
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #666666;
+        text-align: left;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+        background: #f8f9fa;
+        font-weight: 600;
+        color: #333333;
+    }
+
+    tr:hover {
+        background: #f8f9fa;
+    }
+</style>
 </body>
