@@ -1,0 +1,82 @@
+/* 공통 페이지 스타일 - 2016_pages용 */
+
+/* 메인 프레임 스타일 */
+.modern-frame {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 제목 스타일 */
+.modern-frame h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-weight: 600;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+    width: auto;
+    max-width: 100%;
+}
+
+/* h2 스타일 */
+.modern-frame h2 {
+    color: #333333;
+    font-size: 1.8em;
+    margin: 40px 0 20px 0;
+    font-weight: 600;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+/* h3 스타일 */
+.modern-frame h3 {
+    color: #333333;
+    font-size: 1.3em;
+    margin: 30px 0 15px 0;
+    font-weight: 600;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+/* 컨텍스트 박스 스타일 */
+.modern-frame .context1 {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 0;
+    border: none;
+    margin: 20px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666666;
+    text-align: left;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .modern-frame {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .modern-frame h1 {
+        font-size: 2em;
+    }
+    
+    .modern-frame h2 {
+        font-size: 1.5em;
+    }
+}
+
