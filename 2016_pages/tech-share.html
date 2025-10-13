@@ -7,16 +7,134 @@ title: 기술문서공유
 <body style="background: Gainsboro no-repeat fixed center;">
 <div class="event black-frame">
     <h1 class="title">{{ page.title }}</h1>
-    <h2>기술보고서</h2>
-    <a href="/files/TechnologyAndBusinessIssueReport.pdf" download="기술보고서.pdf">
-        <img class="small-logo" src="/css/2016_style/img/download_icon.png" alt="">
-    </a>
-    <h2>데이터 관리 통합 플랫폼 시스템 기술 설계서</h2>
-    <a href="/files/platform_design.png" download="액티브 메타 데이터 기반 데이터 관리 통합 플랫폼 시스템 설계서.png">
-        <img class="small-logo" src="/css/2016_style/img/download_icon.png" alt="">
-    </a>
-    <h2>전체 서비스 구조도</h2>
-    <a href="/css/2016_style/img/system-diagram.png" download="전체 서비스 구조도.png">
-        <img class="small-logo" src="/css/2016_style/img/download_icon.png" alt="">
-    </a>
+    
+    <div class="document-section">
+        <h2>제출서류</h2>
+        
+        <div class="document-cards">
+            <!-- 기술보고서 -->
+            <div class="document-card">
+                <div class="document-icon">
+                    <img src="/css/2016_style/img/download_icon.png" alt="PDF" style="width: 24px; height: 24px;">
+                </div>
+                <div class="document-info">
+                    <div class="document-title">TaB 이슈보고서 - TechnologyAndBusinessIssueReport [PDF, 2.1MB]</div>
+                    <div class="document-details">
+                        <span class="issuing-org">한국클라우드컴퓨팅연구조합</span>
+                        <span class="issue-date">2024.09.15</span>
+                    </div>
+                </div>
+                <div class="document-download">
+                    <a href="/files/TechnologyAndBusinessIssueReport.pdf" download="기술보고서.pdf" class="download-btn">
+                        다운로드 >
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .document-section {
+            margin: 30px 0;
+        }
+        
+        .document-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .document-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .document-card {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+            transition: box-shadow 0.2s ease;
+        }
+        
+        .document-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .document-icon {
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .document-info {
+            flex: 1;
+            margin-right: 15px;
+        }
+        
+        .document-title {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .document-details {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .issuing-org {
+            font-weight: 500;
+        }
+        
+        .issue-date {
+            color: #888;
+        }
+        
+        .document-download {
+            flex-shrink: 0;
+        }
+        
+        .download-btn {
+            background: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+        
+        .download-btn:hover {
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .document-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .document-info {
+                margin-right: 0;
+                width: 100%;
+            }
+            
+            .document-download {
+                align-self: flex-end;
+            }
+        }
+    </style>
 </div>
