@@ -1,7 +1,7 @@
 ---
 layout: 2016_default
 permalink: /project/intro
-title: 프로젝트 소개
+title: 과제소개
 ---
 <!--background color-->
 <link rel="stylesheet" href="/css/2016_style/common-pages.css">
@@ -10,192 +10,52 @@ title: 프로젝트 소개
 <div class="event modern-frame">
     <h1 class="title">{{ page.title }}</h1>
 
-    <h2>프로젝트 목표</h2>
-    <p class="context1">써드파티 데이터의 활용성 증대를 위해 지능적인 데이터 관계 분석 및 데이터 자동 연결 확장을 수행하는 액티브 메타데이터 기반 능동형 데이터 확장 기술 개발</p>
+    <h2>과제개요</h2>
+    <p class="context1">다양한 목적과 규격으로 생성되는 데이터들에 대해 데이터 간 관계 분석, 통합 검색/탐색, 그리고 동적으로 변화하는 다종 데이터의 메타정보 특성을 반영한 액티브 메타데이터 기반 기술을 통해, 산업 및 도메인 분야의 특성과 목적에 맞게 확장하여 데이터 패키징 등 데이터 자산을 더욱 효율적으로 활용할 수 있게 하는 지능형 데이터 통합 자동화 환경 제공 기술을 제공합니다.</p>
+
+    <h2>빅데이터 기반 데이터 확장 기술 문제점</h2>
+    <p class="context1">기존 데이터 활용은 데이터 연계·통합이 수작업 중심으로 운영되어 시간과 비용 부담이 크며, 비정형 데이터의 메타정보 부족과 신규·기존 데이터 간 관계 파악의 어려움으로 인해 데이터의 효율적 활용과 연계·통합에 한계가 존재합니다.</p>
+
+    <h2>액티브 메타데이터 기반 능동형 데이터 확장 기술의 필요성</h2>
+    <p class="context1">데이터 활용을 위한 구축 환경 변화와 데이터 규모 증가에 따른 복잡성 해결, 실시간 자동화 데이터 처리에 대한 수요가 급격히 증가하고 있으며, 다양한 데이터를 효과적으로 관리 및 활용하기 위해서는 능동적인 데이터 처리 기술이 필요합니다.</p>
+
+    <h2>과제목표</h2>
+    <p class="context1">써드파티 데이터의 활용성 증대를 위해 지능적인 데이터 관계 분석과 데이터 자동 연결·확장 기능을 수행하는 액티브 메타데이터 기반 능동형 데이터 확장 기술을 위한 데이터 활용 통합 플랫폼 기술을 개발합니다.</p>
+
+    <h2>세부목표</h2>
+    <div class="context1">
+        <ul>
+            <li>데이터 파이프라인 기반 액티브 메타데이터 수집 기술</li>
+            <li>데이터 카탈로그 구성 기술을 위한 액티브 메타데이터 저장 및 관리 기술</li>
+            <li>액티브 메타데이터 검증/평가 자동화 기술</li>
+            <li>머신러닝 기반 데이터 카탈로그 기술</li>
+            <li>액티브 메타데이터 기반 데이터 특징 추출 및 분석 기능</li>
+            <li>인공지능(AI) 기반 데이터 상호 연관성 분석 기능</li>
+            <li>데이터 패턴 모델링 기반 데이터 관계 분석 기능</li>
+            <li>액티브 메타데이터 기반 네트워크 생성 및 관계 분석 기능</li>
+            <li>액티브 메타데이터 기반 검색 및 자동 탐색 기능</li>
+            <li>탐색 데이터 확장 및 통합 구성 기능</li>
+            <li>동적 변화 데이터 파이프라인 구성 기능</li>
+            <li>신뢰성 보장 능동형 데이터 패키징 기능</li>
+            <li>외부 모듈 연계 기능</li>
+            <li>사용자 기반 액티브 메타데이터 생성 및 관리 기능</li>
+            <li>액티브 메타데이터 기반 데이터 관계 분석 및 자동 탐색 기능</li>
+            <li>데이터 특징 및 관계 분석 시각화 기능</li>
+            <li>다종 써드파티 데이터 활용 통합 플랫폼</li>
+            <li>데이터 적합성 검증 및 공유 기능</li>
+            <li>이종 도메인 기반 능동형 데이터 확장 기능</li>
+        </ul>
+    </div>
 
     <h2>기본 아키텍처</h2>
     <img class=architecture-img src="/css/2016_style/img/diagram/system_diagram.png" alt="">
 
     <h2>시스템 개요도</h2>
     <img class=architecture-img src="/css/2016_style/img/system-diagram.png" alt="">
-
-    <h2>써드파티 데이터(Third Party Data)란?</h2>
-    <p class="context1">
-        데이터 생성 주체와 직접적인 관계가 없는 법인 혹은 데이터 브로커로부터 수집된,
-        타 기업으로의 판매 또는 세분화 타겟 마케팅 활동이 가능한 대규모 데이터 세트
-    </p>
-
-    <h2>액티브 메타데이터</h2>
-    <p class="context1">
-        데이터의 데이터. 데이터 및 분석 사용 사례에 대한 지속적인 분석을 지원하기 위해 필요하며,
-        데이터 관리와 데이터 분석 프로세스에서 실제 데이터와 함께 동적으로 사용됩니다. 조직이 데이터 자산을 이해하도록 돕는 역할을 합니다.
-    </p>
-
-    <h2>능동형 데이터 확장 기술</h2>
-    <p class="context1">
-        액티브 메타데이터 기반 기술을 통해 상시 동작하며 지능적으로 데이터를 생성하고 관리하여 사용자에게 메타데이터 저장, 관리, 검색, 탐색,
-        AI 기반 데이터 관계 분석, 데이터동적 변화 분석 및 반영 등을 제공할 수 있는 기술.<br>최신 데이터 통계 정보를 지속적으로 수집 및 관리하며 데이터
-        간 관계를 지능적으로 인지하여 지속적인 데이터 연결 관계를 자동 생성함.
-    </p>
-
-    <h2>과제연구내용</h2>
-    
-    <div class="research-cards">
-        <!-- 1번 과제 -->
-        <div class="research-card">
-            <div class="card-header">
-                <div class="card-number">1</div>
-                <h3>액티브 메타데이터 구조 설계 및 처리 기술</h3>
-            </div>
-            <div class="card-content">
-                <ul>
-                    <li>데이터의 특성 및 관계를 포함하는 액티브 메타데이터 구조 설계</li>
-                    <li>데이터 카탈로그 구성을 위한 액티브 메타데이터 처리 기술 개발</li>
-                    <li>데이터 변화를 반영한 데이터 갱신 기능 지원 액티브 메타데이터 구성 기술 개발</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 2번 과제 -->
-        <div class="research-card">
-            <div class="card-header">
-                <div class="card-number">2</div>
-                <h3>액티브 메타데이터 기반 데이터 간 관계 생성 기술</h3>
-            </div>
-            <div class="card-content">
-                <ul>
-                    <li>액티브 메타데이터 기반 데이터 특징 추출 및 분석 기술 개발</li>
-                    <li>인공지능 기반 데이터 간 상호 연관성 분석 기술 개발</li>
-                    <li>데이터 패턴 모델링 및 네트워크 분석을 통한 데이터 간 관계 생성 기술 개발</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 3번 과제 -->
-        <div class="research-card">
-            <div class="card-header">
-                <div class="card-number">3</div>
-                <h3>지능형 데이터 자동 탐색 및 패키징 기술</h3>
-            </div>
-            <div class="card-content">
-                <ul>
-                    <li>액티브 메타데이터 기반 데이터 검색 기술 개발</li>
-                    <li>데이터 활용 목적 기반 데이터 자동 탐색 기술 개발</li>
-                    <li>탐색 데이터의 확장 통합 구성을 위한 능동형 데이터 확장 기술 개발</li>
-                    <li>써드파티 데이터의 동적 변화 반영을 위한 데이터 파이프라인 자동 구성 기술 개발</li>
-                    <li>데이터 제공의 신뢰성을 보장하는 능동형 데이터 패키징 기술 개발</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 4번 과제 -->
-        <div class="research-card">
-            <div class="card-header">
-                <div class="card-number">4</div>
-                <h3>써드파티 데이터 활용 환경 제공 통합 플랫폼 기술</h3>
-            </div>
-            <div class="card-content">
-                <ul>
-                    <li>다종 써드파티 데이터 연계형 액티브 메타데이터 생성 기술 개발</li>
-                    <li>액티브 메타데이터 기반 데이터 관계 분석 및 자동 탐색 도구 개발</li>
-                    <li>데이터의 특징 및 관계 분석 결과에 대한 데이터 시각화 기술 개발</li>
-                    <li>데이터의 적합성 검증 및 공유 기술 개발</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 5번 과제 -->
-        <div class="research-card">
-            <div class="card-header">
-                <div class="card-number">5</div>
-                <h3>실증 시스템 구축 및 시범서비스 적용</h3>
-            </div>
-            <div class="card-content">
-                <ul>
-                    <li>능동형 데이터 확장 기술에 대한 수요 또는 수혜 기업 기관 연계형 실증 시스템 구축</li>
-                    <li>이종 도메인 데이터 기반 능동형 데이터 확장 기술에 대한 시범서비스 적용</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </div>
 
 <style>
     /* 페이지별 고유 스타일 */
-    .research-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 25px;
-        margin: 30px 0;
-    }
-
-    .research-card {
-        background: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        transition: all 0.3s ease;
-        border: 1px solid #e0e0e0;
-    }
-
-    .research-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .card-header {
-        background: #f8f9fa;
-        color: #495057;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    .card-number {
-        background: #3498db;
-        color: white;
-        width: 40px;
-        height: 40px;
-        border-radius: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        font-size: 1.2em;
-        flex-shrink: 0;
-    }
-
-    .card-header h3 {
-        margin: 0;
-        font-size: 1.1em;
-        font-weight: 600;
-        line-height: 1.4;
-        flex: 1;
-    }
-
-    .card-content {
-        padding: 25px;
-        background: #ffffff;
-    }
-
-    .card-content ul {
-        margin: 0;
-        padding-left: 20px;
-    }
-
-    .card-content li {
-        margin-bottom: 12px;
-        color: #495057;
-        line-height: 1.5;
-    }
-
-    .card-content li::marker {
-        color: #3498db;
-        font-weight: bold;
-    }
-
     .architecture-img {
         width: 100%;
         max-width: 800px;
@@ -208,10 +68,13 @@ title: 프로젝트 소개
         margin-right: auto;
     }
 
-    @media (max-width: 768px) {
-        .research-cards {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
+    .context1 ul {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    .context1 li {
+        margin-bottom: 8px;
+        line-height: 1.6;
     }
 </style>
