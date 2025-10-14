@@ -81,13 +81,7 @@
 }
 
 /* 태블릿 반응형 */
-@media (max-width: 2000px) {
-    .modern-frame {
-        margin: 20px 100px;
-    }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .modern-frame {
         margin: 20px 100px;
     }
