@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/updatedAt">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">갱신 시각</rdfs:label>
+    <rdfs:label xml:lang="en">updated at</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 메타데이터가 마지막으로 바뀐 시각.</rdfs:comment>
+    <rdfs:comment xml:lang="en">When the original metadata was last changed.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 메타데이터가 마지막으로 바뀐 시각.</skos:definition>
+    <skos:definition xml:lang="en">When the original metadata was last changed.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/isPreferred">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">대표값 여부</rdfs:label>
+    <rdfs:label xml:lang="en">is preferred</rdfs:label>
+    <rdfs:comment xml:lang="ko">같은 표준 속성에 여러 원본 속성이 대응될 때 대표값으로 쓰는 매핑이면 참. 예: 한국어 제목과 영어 제목이 모두 dct:title에 대응되면 기본 언어 쪽을 참으로 둔다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">True when, among several original attributes mapped to the same standard property, this one supplies the representative value.</rdfs:comment>
+    <skos:definition xml:lang="ko">같은 표준 속성에 여러 원본 속성이 대응될 때 대표값으로 쓰는 매핑이면 참. 예: 한국어 제목과 영어 제목이 모두 dct:title에 대응되면 기본 언어 쪽을 참으로 둔다.</skos:definition>
+    <skos:definition xml:lang="en">True when, among several original attributes mapped to the same standard property, this one supplies the representative value.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/representsDataset">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">대응 데이터셋</rdfs:label>
+    <rdfs:label xml:lang="en">represents dataset</rdfs:label>
+    <rdfs:comment xml:lang="ko">이 항목이 나타내는 데이터셋(dcat:Dataset).</rdfs:comment>
+    <rdfs:comment xml:lang="en">The dcat:Dataset this entry represents.</rdfs:comment>
+    <skos:definition xml:lang="ko">이 항목이 나타내는 데이터셋(dcat:Dataset).</skos:definition>
+    <skos:definition xml:lang="en">The dcat:Dataset this entry represents.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/ofEntry">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">소속 카탈로그엔트리</rdfs:label>
+    <rdfs:label xml:lang="en">of entry</rdfs:label>
+    <rdfs:comment xml:lang="ko">이 원본 속성 항목이 속한 카탈로그엔트리.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The catalog entry this metadata entry belongs to.</rdfs:comment>
+    <skos:definition xml:lang="ko">이 원본 속성 항목이 속한 카탈로그엔트리.</skos:definition>
+    <skos:definition xml:lang="en">The catalog entry this metadata entry belongs to.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/MetadataEntry"/>
+    <rdfs:range rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <owl:inverseOf rdf:resource="https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/rawMetadata">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">원본 메타데이터</rdfs:label>
+    <rdfs:label xml:lang="en">raw metadata</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 메타데이터 전문. JSON, XML 등 원본 형식의 문자열을 그대로 담는다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The complete original metadata as a literal in its native format (JSON, XML, …).</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 메타데이터 전문. JSON, XML 등 원본 형식의 문자열을 그대로 담는다.</skos:definition>
+    <skos:definition xml:lang="en">The complete original metadata as a literal in its native format (JSON, XML, …).</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/targetProperty">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">매핑 대상 표준 속성</rdfs:label>
+    <rdfs:label xml:lang="en">target property</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 속성이 대응되는 표준 속성. 예: dct:title, dcat:theme.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The standard property the original attribute maps to, e.g. dct:title or dcat:theme.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 속성이 대응되는 표준 속성. 예: dct:title, dcat:theme.</skos:definition>
+    <skos:definition xml:lang="en">The standard property the original attribute maps to, e.g. dct:title or dcat:theme.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">컬럼관계 보유</rdfs:label>
+    <rdfs:label xml:lang="en">has column relation</rdfs:label>
+    <rdfs:comment xml:lang="ko">카탈로그엔트리가 가진 속성 매핑 관계.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A column relation belonging to this catalog entry.</rdfs:comment>
+    <skos:definition xml:lang="ko">카탈로그엔트리가 가진 속성 매핑 관계.</skos:definition>
+    <skos:definition xml:lang="en">A column relation belonging to this catalog entry.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:range rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <owl:inverseOf rdf:resource="https://thirdactivedataextech.github.io/terms/amap/forEntry"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ko">컬럼관계</rdfs:label>
+    <rdfs:label xml:lang="en">Column Relation</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 속성 하나가 어떤 표준 속성에 대응하는지를 기록한 매핑 관계. 원본 경로, 대상 표준 속성, 유사도 점수, 대표값 여부, 우선순위, 판단 근거를 담는다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A mapping that states which standard property an original attribute corresponds to, with its source path, target property, similarity score, preference, priority and evidence.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 속성 하나가 어떤 표준 속성에 대응하는지를 기록한 매핑 관계. 원본 경로, 대상 표준 속성, 유사도 점수, 대표값 여부, 우선순위, 판단 근거를 담는다.</skos:definition>
+    <skos:definition xml:lang="en">A mapping that states which standard property an original attribute corresponds to, with its source path, target property, similarity score, preference, priority and evidence.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/ingestedAt">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">수집 시각</rdfs:label>
+    <rdfs:label xml:lang="en">ingested at</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 메타데이터를 가져온 시각.</rdfs:comment>
+    <rdfs:comment xml:lang="en">When the original metadata was collected.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 메타데이터를 가져온 시각.</skos:definition>
+    <skos:definition xml:lang="en">When the original metadata was collected.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">메타데이터엔트리 보유</rdfs:label>
+    <rdfs:label xml:lang="en">has metadata entry</rdfs:label>
+    <rdfs:comment xml:lang="ko">카탈로그엔트리가 가진 원본 속성 항목.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A metadata entry belonging to this catalog entry.</rdfs:comment>
+    <skos:definition xml:lang="ko">카탈로그엔트리가 가진 원본 속성 항목.</skos:definition>
+    <skos:definition xml:lang="en">A metadata entry belonging to this catalog entry.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:range rdf:resource="https://thirdactivedataextech.github.io/terms/amap/MetadataEntry"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <owl:inverseOf rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ofEntry"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/sourcePath">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">원본 경로</rdfs:label>
+    <rdfs:label xml:lang="en">source path</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 메타데이터 안에서 속성의 위치를 가리키는 경로. JSON이면 JSONPath, XML이면 XPath 식으로 쓴다. 원본 속성 항목과 매핑 관계가 같은 경로 값으로 서로 대응된다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Path locating the attribute inside the original metadata (JSONPath for JSON, XPath for XML). A metadata entry and a column relation with the same path refer to the same attribute.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 메타데이터 안에서 속성의 위치를 가리키는 경로. JSON이면 JSONPath, XML이면 XPath 식으로 쓴다. 원본 속성 항목과 매핑 관계가 같은 경로 값으로 서로 대응된다.</skos:definition>
+    <skos:definition xml:lang="en">Path locating the attribute inside the original metadata (JSONPath for JSON, XPath for XML). A metadata entry and a column relation with the same path refer to the same attribute.</skos:definition>
+    <rdfs:domain rdf:nodeID="nd7a44ac08e88412f8f4763de1401b2b7b1"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/forEntry">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">대상 카탈로그엔트리</rdfs:label>
+    <rdfs:label xml:lang="en">for entry</rdfs:label>
+    <rdfs:comment xml:lang="ko">이 매핑 관계가 속한 카탈로그엔트리.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The catalog entry this column relation belongs to.</rdfs:comment>
+    <skos:definition xml:lang="ko">이 매핑 관계가 속한 카탈로그엔트리.</skos:definition>
+    <skos:definition xml:lang="en">The catalog entry this column relation belongs to.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation"/>
+    <rdfs:range rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <owl:inverseOf rdf:resource="https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/representsService">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="ko">대응 데이터서비스</rdfs:label>
+    <rdfs:label xml:lang="en">represents data service</rdfs:label>
+    <rdfs:comment xml:lang="ko">이 항목이 나타내는 데이터 서비스(dcat:DataService).</rdfs:comment>
+    <rdfs:comment xml:lang="en">The dcat:DataService this entry represents.</rdfs:comment>
+    <skos:definition xml:lang="ko">이 항목이 나타내는 데이터 서비스(dcat:DataService).</skos:definition>
+    <skos:definition xml:lang="en">The dcat:DataService this entry represents.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/priority">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">우선순위</rdfs:label>
+    <rdfs:label xml:lang="en">priority</rdfs:label>
+    <rdfs:comment xml:lang="ko">같은 표준 속성에 대응되는 매핑들 사이의 순서. 숫자가 작을수록 우선한다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Order among mappings to the same standard property; lower comes first.</rdfs:comment>
+    <skos:definition xml:lang="ko">같은 표준 속성에 대응되는 매핑들 사이의 순서. 숫자가 작을수록 우선한다.</skos:definition>
+    <skos:definition xml:lang="en">Order among mappings to the same standard property; lower comes first.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ko">카탈로그엔트리</rdfs:label>
+    <rdfs:label xml:lang="en">Catalog Entry</rdfs:label>
+    <rdfs:comment xml:lang="ko">카탈로그에 등록된 데이터 하나를 나타내는 항목. 원본 메타데이터를 그대로 보존하면서 제목·발행자·주제 같은 공통 속성을 DCAT 어휘로 함께 표현하고, 원본 속성 항목(MetadataEntry)과 속성 매핑 관계(ColumnRelation)를 연결하는 기준이 된다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">One catalogued data item. It keeps the original metadata intact, exposes common properties (title, publisher, theme, …) in DCAT terms, and anchors the item's metadata entries and column relations.</rdfs:comment>
+    <skos:definition xml:lang="ko">카탈로그에 등록된 데이터 하나를 나타내는 항목. 원본 메타데이터를 그대로 보존하면서 제목·발행자·주제 같은 공통 속성을 DCAT 어휘로 함께 표현하고, 원본 속성 항목(MetadataEntry)과 속성 매핑 관계(ColumnRelation)를 연결하는 기준이 된다.</skos:definition>
+    <skos:definition xml:lang="en">One catalogued data item. It keeps the original metadata intact, exposes common properties (title, publisher, theme, …) in DCAT terms, and anchors the item's metadata entries and column relations.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd7a44ac08e88412f8f4763de1401b2b7b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nd7a44ac08e88412f8f4763de1401b2b7b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd7a44ac08e88412f8f4763de1401b2b7b3">
+    <rdf:first rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/rawFormat">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">원본 형식</rdfs:label>
+    <rdfs:label xml:lang="en">raw format</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 메타데이터의 형식 이름. 예: Schema.org/JSON-LD, DCAT/RDF-XML, SDMX/XML.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Name of the original metadata format, e.g. Schema.org/JSON-LD, DCAT/RDF-XML, SDMX/XML.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 메타데이터의 형식 이름. 예: Schema.org/JSON-LD, DCAT/RDF-XML, SDMX/XML.</skos:definition>
+    <skos:definition xml:lang="en">Name of the original metadata format, e.g. Schema.org/JSON-LD, DCAT/RDF-XML, SDMX/XML.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/CatalogEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/similarityScore">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">유사도 점수</rdfs:label>
+    <rdfs:label xml:lang="en">similarity score</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 속성과 표준 속성이 얼마나 같은지를 나타내는 0.0~1.0 사이의 값. 1.0은 완전히 같음, 값이 낮을수록 이름이나 구조의 차이가 크다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">How closely the original attribute matches the standard property, from 0.0 to 1.0; 1.0 means identical.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 속성과 표준 속성이 얼마나 같은지를 나타내는 0.0~1.0 사이의 값. 1.0은 완전히 같음, 값이 낮을수록 이름이나 구조의 차이가 크다.</skos:definition>
+    <skos:definition xml:lang="en">How closely the original attribute matches the standard property, from 0.0 to 1.0; 1.0 means identical.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/evidence">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">판단 근거</rdfs:label>
+    <rdfs:label xml:lang="en">evidence</rdfs:label>
+    <rdfs:comment xml:lang="ko">이 매핑을 결정한 근거. 적용한 규칙이나 사전, 검토한 후보 목록, 추천과 최종 결정 내역, 규칙·모델 버전 등을 적는다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Why this mapping was decided: rules or dictionaries applied, candidates considered, recommendation and final decision, rule/model versions.</rdfs:comment>
+    <skos:definition xml:lang="ko">이 매핑을 결정한 근거. 적용한 규칙이나 사전, 검토한 후보 목록, 추천과 최종 결정 내역, 규칙·모델 버전 등을 적는다.</skos:definition>
+    <skos:definition xml:lang="en">Why this mapping was decided: rules or dictionaries applied, candidates considered, recommendation and final decision, rule/model versions.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/ColumnRelation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/value">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="ko">원본 값</rdfs:label>
+    <rdfs:label xml:lang="en">value</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 속성의 실제 값.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The actual value of the original attribute.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 속성의 실제 값.</skos:definition>
+    <skos:definition xml:lang="en">The actual value of the original attribute.</skos:definition>
+    <rdfs:domain rdf:resource="https://thirdactivedataextech.github.io/terms/amap/MetadataEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:title xml:lang="en">AMAP: Active Metadata Application Profile</dcterms:title>
+    <dcterms:title xml:lang="ko">AMAP 능동형 메타데이터 응용 프로파일</dcterms:title>
+    <dcterms:description xml:lang="ko">W3C DCAT 3.0을 확장한 어휘. 형식이 서로 다른 원본 메타데이터를 원본 그대로 보존하면서 DCAT 공통 속성으로 표현하고, 원본 속성과 표준 속성 사이의 매핑 관계(유사도, 대표값, 근거)를 기록할 수 있게 한다.</dcterms:description>
+    <dcterms:description xml:lang="en">An extension of W3C DCAT 3.0 for representing heterogeneous source metadata in DCAT terms while preserving the original, and for recording how each original attribute maps to a standard property (similarity, preference, evidence).</dcterms:description>
+    <vann:preferredNamespacePrefix>amap</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://thirdactivedataextech.github.io/terms/amap/</vann:preferredNamespaceUri>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-10-02</dcterms:created>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-06</dcterms:modified>
+    <owl:versionInfo>1.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://thirdactivedataextech.github.io/terms/amap/MetadataEntry">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ko">메타데이터엔트리</rdfs:label>
+    <rdfs:label xml:lang="en">Metadata Entry</rdfs:label>
+    <rdfs:comment xml:lang="ko">원본 메타데이터의 속성 하나. 원본 안에서의 위치(경로)와 값을 그대로 기록한다. 공통 속성으로 옮기지 못한 원본 정보도 이 항목으로 남는다.</rdfs:comment>
+    <rdfs:comment xml:lang="en">One attribute of the original metadata, recorded with its path in the source and its value. Source information that has no standard counterpart is kept here.</rdfs:comment>
+    <skos:definition xml:lang="ko">원본 메타데이터의 속성 하나. 원본 안에서의 위치(경로)와 값을 그대로 기록한다. 공통 속성으로 옮기지 못한 원본 정보도 이 항목으로 남는다.</skos:definition>
+    <skos:definition xml:lang="en">One attribute of the original metadata, recorded with its path in the source and its value. Source information that has no standard counterpart is kept here.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://thirdactivedataextech.github.io/terms/amap/"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd7a44ac08e88412f8f4763de1401b2b7b2">
+    <rdf:first rdf:resource="https://thirdactivedataextech.github.io/terms/amap/MetadataEntry"/>
+    <rdf:rest rdf:nodeID="nd7a44ac08e88412f8f4763de1401b2b7b3"/>
+  </rdf:Description>
+</rdf:RDF>

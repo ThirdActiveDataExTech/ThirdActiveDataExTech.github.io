@@ -1,0 +1,254 @@
+_:n9ed5fdded5c049e1a3e6a7febe0b73a3b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2000/01/rdf-schema#label> "represents data service"@en .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2004/02/skos/core#definition> "원본 메타데이터를 가져온 시각."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/2004/02/skos/core#definition> "카탈로그에 등록된 데이터 하나를 나타내는 항목. 원본 메타데이터를 그대로 보존하면서 제목·발행자·주제 같은 공통 속성을 DCAT 어휘로 함께 표현하고, 원본 속성 항목(MetadataEntry)과 속성 매핑 관계(ColumnRelation)를 연결하는 기준이 된다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2002/07/owl#inverseOf> <https://thirdactivedataextech.github.io/terms/amap/forEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2004/02/skos/core#definition> "같은 표준 속성에 대응되는 매핑들 사이의 순서. 숫자가 작을수록 우선한다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2004/02/skos/core#definition> "The dcat:DataService this entry represents."@en .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2000/01/rdf-schema#label> "대응 데이터셋"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2000/01/rdf-schema#label> "of entry"@en .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2000/01/rdf-schema#label> "target property"@en .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2004/02/skos/core#definition> "원본 속성이 대응되는 표준 속성. 예: dct:title, dcat:theme."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/2000/01/rdf-schema#label> "카탈로그엔트리"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "One catalogued data item. It keeps the original metadata intact, exposes common properties (title, publisher, theme, …) in DCAT terms, and anchors the item's metadata entries and column relations."@en .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2004/02/skos/core#definition> "원본 속성과 표준 속성이 얼마나 같은지를 나타내는 0.0~1.0 사이의 값. 1.0은 완전히 같음, 값이 낮을수록 이름이나 구조의 차이가 크다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Why this mapping was decided: rules or dictionaries applied, candidates considered, recommendation and final decision, rule/model versions."@en .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2000/01/rdf-schema#comment> "True when, among several original attributes mapped to the same standard property, this one supplies the representative value."@en .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "A metadata entry belonging to this catalog entry."@en .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2004/02/skos/core#definition> "A column relation belonging to this catalog entry."@en .
+_:n9ed5fdded5c049e1a3e6a7febe0b73a3b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://purl.org/dc/terms/created> "2025-10-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "The dcat:Dataset this entry represents."@en .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2000/01/rdf-schema#label> "원본 경로"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the original metadata format, e.g. Schema.org/JSON-LD, DCAT/RDF-XML, SDMX/XML."@en .
+_:n9ed5fdded5c049e1a3e6a7febe0b73a3b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2000/01/rdf-schema#label> "대표값 여부"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/2004/02/skos/core#definition> "One catalogued data item. It keeps the original metadata intact, exposes common properties (title, publisher, theme, …) in DCAT terms, and anchors the item's metadata entries and column relations."@en .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "The catalog entry this column relation belongs to."@en .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 메타데이터가 마지막으로 바뀐 시각."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2004/02/skos/core#definition> "원본 메타데이터 전문. JSON, XML 등 원본 형식의 문자열을 그대로 담는다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2000/01/rdf-schema#range> <https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/2000/01/rdf-schema#label> "Catalog Entry"@en .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "이 매핑 관계가 속한 카탈로그엔트리."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "raw metadata"@en .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual value of the original attribute."@en .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2004/02/skos/core#definition> "Name of the original metadata format, e.g. Schema.org/JSON-LD, DCAT/RDF-XML, SDMX/XML."@en .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2004/02/skos/core#definition> "When the original metadata was last changed."@en .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#DataService> .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2004/02/skos/core#definition> "원본 메타데이터 안에서 속성의 위치를 가리키는 경로. JSON이면 JSONPath, XML이면 XPath 식으로 쓴다. 원본 속성 항목과 매핑 관계가 같은 경로 값으로 서로 대응된다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2000/01/rdf-schema#label> "매핑 대상 표준 속성"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2004/02/skos/core#definition> "카탈로그엔트리가 가진 속성 매핑 관계."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2004/02/skos/core#definition> "How closely the original attribute matches the standard property, from 0.0 to 1.0; 1.0 means identical."@en .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:n9ed5fdded5c049e1a3e6a7febe0b73a3b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2004/02/skos/core#definition> "The catalog entry this column relation belongs to."@en .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2000/01/rdf-schema#label> "represents dataset"@en .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2004/02/skos/core#definition> "원본 메타데이터가 마지막으로 바뀐 시각."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The standard property the original attribute maps to, e.g. dct:title or dcat:theme."@en .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2000/01/rdf-schema#label> "유사도 점수"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2002/07/owl#inverseOf> <https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 메타데이터의 속성 하나. 원본 안에서의 위치(경로)와 값을 그대로 기록한다. 공통 속성으로 옮기지 못한 원본 정보도 이 항목으로 남는다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2000/01/rdf-schema#label> "원본 형식"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2000/01/rdf-schema#label> "is preferred"@en .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "이 원본 속성 항목이 속한 카탈로그엔트리."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "이 항목이 나타내는 데이터셋(dcat:Dataset)."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2000/01/rdf-schema#comment> "Path locating the attribute inside the original metadata (JSONPath for JSON, XPath for XML). A metadata entry and a column relation with the same path refer to the same attribute."@en .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2002/07/owl#inverseOf> <https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2000/01/rdf-schema#label> "대상 카탈로그엔트리"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 속성의 실제 값."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2004/02/skos/core#definition> "이 항목이 나타내는 데이터셋(dcat:Dataset)."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "카탈로그엔트리가 가진 원본 속성 항목."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "One attribute of the original metadata, recorded with its path in the source and its value. Source information that has no standard counterpart is kept here."@en .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 메타데이터의 형식 이름. 예: Schema.org/JSON-LD, DCAT/RDF-XML, SDMX/XML."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2000/01/rdf-schema#comment> "Order among mappings to the same standard property; lower comes first."@en .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2000/01/rdf-schema#label> "value"@en .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2004/02/skos/core#definition> "Why this mapping was decided: rules or dictionaries applied, candidates considered, recommendation and final decision, rule/model versions."@en .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2004/02/skos/core#definition> "A metadata entry belonging to this catalog entry."@en .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2004/02/skos/core#definition> "The complete original metadata as a literal in its native format (JSON, XML, …)."@en .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2000/01/rdf-schema#range> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2004/02/skos/core#definition> "카탈로그엔트리가 가진 원본 속성 항목."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2004/02/skos/core#definition> "The dcat:Dataset this entry represents."@en .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2000/01/rdf-schema#label> "similarity score"@en .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/2000/01/rdf-schema#label> "컬럼관계"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2004/02/skos/core#definition> "원본 메타데이터의 형식 이름. 예: Schema.org/JSON-LD, DCAT/RDF-XML, SDMX/XML."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2000/01/rdf-schema#label> "updated at"@en .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://purl.org/dc/terms/modified> "2026-10-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2004/02/skos/core#definition> "이 매핑 관계가 속한 카탈로그엔트리."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2004/02/skos/core#definition> "The actual value of the original attribute."@en .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2004/02/skos/core#definition> "The catalog entry this metadata entry belongs to."@en .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/2000/01/rdf-schema#label> "Metadata Entry"@en .
+_:n9ed5fdded5c049e1a3e6a7febe0b73a3b1 <http://www.w3.org/2002/07/owl#unionOf> _:n9ed5fdded5c049e1a3e6a7febe0b73a3b2 .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://purl.org/dc/terms/title> "AMAP 능동형 메타데이터 응용 프로파일"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 메타데이터 전문. JSON, XML 등 원본 형식의 문자열을 그대로 담는다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2000/01/rdf-schema#label> "priority"@en .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "이 매핑을 결정한 근거. 적용한 규칙이나 사전, 검토한 후보 목록, 추천과 최종 결정 내역, 규칙·모델 버전 등을 적는다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2004/02/skos/core#definition> "The standard property the original attribute maps to, e.g. dct:title or dcat:theme."@en .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 메타데이터 안에서 속성의 위치를 가리키는 경로. JSON이면 JSONPath, XML이면 XPath 식으로 쓴다. 원본 속성 항목과 매핑 관계가 같은 경로 값으로 서로 대응된다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n9ed5fdded5c049e1a3e6a7febe0b73a3b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n9ed5fdded5c049e1a3e6a7febe0b73a3b3 .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2004/02/skos/core#definition> "같은 표준 속성에 여러 원본 속성이 대응될 때 대표값으로 쓰는 매핑이면 참. 예: 한국어 제목과 영어 제목이 모두 dct:title에 대응되면 기본 언어 쪽을 참으로 둔다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://purl.org/dc/terms/description> "An extension of W3C DCAT 3.0 for representing heterogeneous source metadata in DCAT terms while preserving the original, and for recording how each original attribute maps to a standard property (similarity, preference, evidence)."@en .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2000/01/rdf-schema#comment> "이 항목이 나타내는 데이터 서비스(dcat:DataService)."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2000/01/rdf-schema#label> "메타데이터엔트리 보유"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/2004/02/skos/core#definition> "원본 메타데이터의 속성 하나. 원본 안에서의 위치(경로)와 값을 그대로 기록한다. 공통 속성으로 옮기지 못한 원본 정보도 이 항목으로 남는다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2000/01/rdf-schema#range> <https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 메타데이터를 가져온 시각."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://thirdactivedataextech.github.io/terms/amap/" .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2000/01/rdf-schema#comment> "같은 표준 속성에 대응되는 매핑들 사이의 순서. 숫자가 작을수록 우선한다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2000/01/rdf-schema#label> "ingested at"@en .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2000/01/rdf-schema#comment> "The dcat:DataService this entry represents."@en .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2000/01/rdf-schema#range> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2004/02/skos/core#definition> "원본 속성의 실제 값."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "amap" .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2000/01/rdf-schema#label> "갱신 시각"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2004/02/skos/core#definition> "True when, among several original attributes mapped to the same standard property, this one supplies the representative value."@en .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "A mapping that states which standard property an original attribute corresponds to, with its source path, target property, similarity score, preference, priority and evidence."@en .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2000/01/rdf-schema#label> "수집 시각"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 속성이 대응되는 표준 속성. 예: dct:title, dcat:theme."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://purl.org/dc/terms/description> "W3C DCAT 3.0을 확장한 어휘. 형식이 서로 다른 원본 메타데이터를 원본 그대로 보존하면서 DCAT 공통 속성으로 표현하고, 원본 속성과 표준 속성 사이의 매핑 관계(유사도, 대표값, 근거)를 기록할 수 있게 한다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2004/02/skos/core#definition> "Order among mappings to the same standard property; lower comes first."@en .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2000/01/rdf-schema#label> "has metadata entry"@en .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2000/01/rdf-schema#label> "evidence"@en .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 속성과 표준 속성이 얼마나 같은지를 나타내는 0.0~1.0 사이의 값. 1.0은 완전히 같음, 값이 낮을수록 이름이나 구조의 차이가 크다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "A column relation belonging to this catalog entry."@en .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "When the original metadata was collected."@en .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/2004/02/skos/core#definition> "One attribute of the original metadata, recorded with its path in the source and its value. Source information that has no standard counterpart is kept here."@en .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "원본 속성 하나가 어떤 표준 속성에 대응하는지를 기록한 매핑 관계. 원본 경로, 대상 표준 속성, 유사도 점수, 대표값 여부, 우선순위, 판단 근거를 담는다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2000/01/rdf-schema#label> "컬럼관계 보유"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/2002/07/owl#inverseOf> <https://thirdactivedataextech.github.io/terms/amap/ofEntry> .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2000/01/rdf-schema#label> "소속 카탈로그엔트리"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2000/01/rdf-schema#label> "원본 메타데이터"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2000/01/rdf-schema#comment> "The complete original metadata as a literal in its native format (JSON, XML, …)."@en .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2000/01/rdf-schema#label> "대응 데이터서비스"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2000/01/rdf-schema#label> "source path"@en .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/2000/01/rdf-schema#label> "원본 값"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/2004/02/skos/core#definition> "A mapping that states which standard property an original attribute corresponds to, with its source path, target property, similarity score, preference, priority and evidence."@en .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2004/02/skos/core#definition> "When the original metadata was collected."@en .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/MetadataEntry> <http://www.w3.org/2000/01/rdf-schema#label> "메타데이터엔트리"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/updatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "When the original metadata was last changed."@en .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "카탈로그엔트리가 가진 속성 매핑 관계."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/similarityScore> <http://www.w3.org/2000/01/rdf-schema#comment> "How closely the original attribute matches the standard property, from 0.0 to 1.0; 1.0 means identical."@en .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Column Relation"@en .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2000/01/rdf-schema#label> "우선순위"@ko .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2004/02/skos/core#definition> "이 매핑을 결정한 근거. 적용한 규칙이나 사전, 검토한 후보 목록, 추천과 최종 결정 내역, 규칙·모델 버전 등을 적는다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2000/01/rdf-schema#label> "for entry"@en .
+<https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> <http://www.w3.org/2004/02/skos/core#definition> "원본 속성 하나가 어떤 표준 속성에 대응하는지를 기록한 매핑 관계. 원본 경로, 대상 표준 속성, 유사도 점수, 대표값 여부, 우선순위, 판단 근거를 담는다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2004/02/skos/core#definition> "이 원본 속성 항목이 속한 카탈로그엔트리."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/hasMetadataEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/ofEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "The catalog entry this metadata entry belongs to."@en .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2000/01/rdf-schema#domain> _:n9ed5fdded5c049e1a3e6a7febe0b73a3b1 .
+<https://thirdactivedataextech.github.io/terms/amap/sourcePath> <http://www.w3.org/2004/02/skos/core#definition> "Path locating the attribute inside the original metadata (JSONPath for JSON, XPath for XML). A metadata entry and a column relation with the same path refer to the same attribute."@en .
+<https://thirdactivedataextech.github.io/terms/amap/priority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://thirdactivedataextech.github.io/terms/amap/representsService> <http://www.w3.org/2004/02/skos/core#definition> "이 항목이 나타내는 데이터 서비스(dcat:DataService)."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/ingestedAt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://thirdactivedataextech.github.io/terms/amap/> .
+<https://thirdactivedataextech.github.io/terms/amap/rawMetadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/hasColumnRelation> <http://www.w3.org/2000/01/rdf-schema#label> "has column relation"@en .
+<https://thirdactivedataextech.github.io/terms/amap/representsDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/rawFormat> <http://www.w3.org/2000/01/rdf-schema#label> "raw format"@en .
+<https://thirdactivedataextech.github.io/terms/amap/forEntry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://thirdactivedataextech.github.io/terms/amap/ColumnRelation> .
+<https://thirdactivedataextech.github.io/terms/amap/> <http://purl.org/dc/terms/title> "AMAP: Active Metadata Application Profile"@en .
+<https://thirdactivedataextech.github.io/terms/amap/CatalogEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "카탈로그에 등록된 데이터 하나를 나타내는 항목. 원본 메타데이터를 그대로 보존하면서 제목·발행자·주제 같은 공통 속성을 DCAT 어휘로 함께 표현하고, 원본 속성 항목(MetadataEntry)과 속성 매핑 관계(ColumnRelation)를 연결하는 기준이 된다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://thirdactivedataextech.github.io/terms/amap/isPreferred> <http://www.w3.org/2000/01/rdf-schema#comment> "같은 표준 속성에 여러 원본 속성이 대응될 때 대표값으로 쓰는 매핑이면 참. 예: 한국어 제목과 영어 제목이 모두 dct:title에 대응되면 기본 언어 쪽을 참으로 둔다."@ko .
+<https://thirdactivedataextech.github.io/terms/amap/targetProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://thirdactivedataextech.github.io/terms/amap/evidence> <http://www.w3.org/2000/01/rdf-schema#label> "판단 근거"@ko .
