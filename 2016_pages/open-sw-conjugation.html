@@ -1,119 +1,208 @@
-diff --git a/2016_pages/open-sw-conjugation.html b/2016_pages/open-sw-conjugation.html
-index dcc4b4c..52afe8a 100644
---- a/2016_pages/open-sw-conjugation.html
-+++ b/2016_pages/open-sw-conjugation.html
-@@ -59,6 +59,114 @@ title: 공개 SW 활용
-         </tbody>
-     </table>
- 
-+    <h2>실증 사례</h2>
-+    <div class="context1">
-+        수요 분야 중 마케팅과 의료 분야를 대상으로 수요기관 연계 실증을 진행하고 있습니다.<br>
-+        두 사례 모두 기관 보유 데이터(1st)와 외부 써드파티 데이터(3rd)를 액티브 메타데이터 기반으로 연결해, 현장 사용자의 의사결정에 활용합니다.
-+    </div>
-+    <table>
-+        <colgroup>
-+            <col style="width:140px;">
-+            <col style="width:auto;">
-+            <col style="width:auto;">
-+        </colgroup>
-+        <thead>
-+        <tr>
-+            <th>구분</th>
-+            <th>방송 광고 추천 API</th>
-+            <th>맞춤형 건강정보 제공 서비스</th>
-+        </tr>
-+        </thead>
-+        <tbody>
-+        <tr>
-+            <td>분야 / 수요기관</td>
-+            <td>마케팅 / SBSi</td>
-+            <td>의료 / 연세의료원</td>
-+        </tr>
-+        <tr>
-+            <td>사용자</td>
-+            <td>광고 집행 담당자</td>
-+            <td>의료진</td>
-+        </tr>
-+        <tr>
-+            <td>입력 → 출력</td>
-+            <td>광고 키워드 → 타겟 성별·연령 비중</td>
-+            <td>환자 암종 → 암종별 건강정보 후보</td>
-+        </tr>
-+        <tr>
-+            <td>진행 현황</td>
-+            <td>API 개발</td>
-+            <td>목업 화면 개발 완료, 실증 진행 중</td>
-+        </tr>
-+        </tbody>
-+    </table>
-+
-+    <h3>사례 1. 방송 광고 추천 API</h3>
-+    <div class="context1">
-+        시청 로그만으로는 변화하는 소비 트렌드를 반영하기 어렵습니다. 쇼핑 트렌드 데이터를 결합해 광고 키워드별 타겟 성별·연령을 API로 제공합니다.
-+    </div>
-+    <table>
-+        <colgroup>
-+            <col style="width:90px;">
-+            <col style="width:auto;">
-+        </colgroup>
-+        <thead>
-+        <tr>
-+            <th>구분</th>
-+            <th>데이터</th>
-+        </tr>
-+        </thead>
-+        <tbody>
-+        <tr>
-+            <td>1st</td>
-+            <td>시청 로그, 광고주 브랜드(업종 키워드), 방송 주요 장면 키워드</td>
-+        </tr>
-+        <tr>
-+            <td>3rd</td>
-+            <td>쇼핑 카테고리별 성별·연령 트렌드 (주간 자동 수집)</td>
-+        </tr>
-+        </tbody>
-+    </table>
-+    <div class="context1">
-+        <b>처리 흐름</b> : 수집·변환 → 회차별 시청 비율 집계 → 매핑표로 키워드·카테고리 연결 후 가중 결합 → API 제공<br><br>
-+        <b>액티브 메타데이터 적용</b><br>
-+        - 써드파티 쇼핑 데이터를 자체 수집기로 주간 갱신<br>
-+        - 매핑표로 광고 품목과 쇼핑 카테고리를 의미적으로 연결<br>
-+    </div>
-+
-+    <h3>사례 2. 맞춤형 건강정보 제공 서비스</h3>
-+    <div class="context1">
-+        의료진이 환자 암종에 맞는 건강정보를 매번 찾기 어려운 문제를 해결합니다. 영상·웹 건강정보를 수집해 암종별로 연결하고, 화면에서 선택해 제공할 수 있도록 합니다.
-+    </div>
-+    <table>
-+        <colgroup>
-+            <col style="width:90px;">
-+            <col style="width:auto;">
-+        </colgroup>
-+        <thead>
-+        <tr>
-+            <th>구분</th>
-+            <th>데이터</th>
-+        </tr>
-+        </thead>
-+        <tbody>
-+        <tr>
-+            <td>1st</td>
-+            <td>암종별 건강정보 큐레이션 출처, 환자 암종 정보</td>
-+        </tr>
-+        <tr>
-+            <td>3rd</td>
-+            <td>의료기관 채널 영상 메타정보 (주간 자동 수집), 웹 건강정보</td>
-+        </tr>
-+        </tbody>
-+    </table>
-+    <div class="context1">
-+        <b>처리 흐름</b> : 원천 데이터 수집 → 암종 키워드 기반 매핑 → 조회·상세·편집·출력·등록 화면 제공 (실증 범위: 5대암)<br><br>
-+        <b>액티브 메타데이터 적용</b><br>
-+        - 의료기관 채널 영상 메타정보를 자체 수집기로 주간 갱신<br>
-+        - 환자 암종(1st)과 건강정보(3rd)를 암종 키워드로 연결<br>
-+    </div>
-+
-     <h3>GitHub 저장소</h3>
-     <div class="context1">
-         <a href="https://github.com/ThirdActiveDataExTech" target="_blank" style="color: #3498db; text-decoration: none; font-size: 1.2em;">
+---
+layout: 2016_default
+permalink: /openSW/conjugation
+title: 공개 SW 활용
+---
+<!--background color-->
+<link rel="stylesheet" href="/css/2016_style/common-pages.css">
+<body style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); background-attachment: fixed;">
+<div class="event modern-frame">
+    <h1 class="title">{{ page.title }}</h1>
+
+    <h2>수요분석</h2>
+    <h3>주요 수요처 예상</h3>
+    <div class="context1">
+        - 새로운 데이터의 갱신 주기가 빠른 대량의 데이터 보유 공공기관<br>
+        - 다종 정형 반정형 비정형 공개 데이터를 활용하는 공공기관<br>
+        - 데이터 관리와 분석을 통해 디지털 전환을 추진하려는 기업<br>
+        - 분산 저장된 데이터를 활용해야 하는 데이터 분석 활용기업<br>
+    </div>
+    <h3>수요 분야와 시나리오 예상</h3>
+    <table>
+        <colgroup>
+            <col style="width:90px;">
+            <col style="width:auto;">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>수요분야</th>
+            <th>수요별 예시</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>의료</td>
+            <td>질환 및 진단에 대한 임상, 영상 등의 정보 변화를 반영한 액티브 메타데이터를 활용하여 환자의 치료 방법을 검색 및 추천하는 서비스</td>
+        </tr>
+        <tr>
+            <td>교통</td>
+            <td>시간대별 교통량 정보, 교통사고 정보, 차량 이동량 정보와 같은 변화를 반영한 액티브 메타데이터 기반 인프라 정책 해결 서비스</td>
+        </tr>
+        <tr>
+            <td>데이터</td>
+            <td>환경/기후, 에너지, 교통 등 다종 데이터의 특성 및 연결 정보를 포함하는 액티브 메타데이터를 사용하여 사용자의 데이터 활용 목적에
+                맞는 통합 데이터를 구성하고 제공하는 서비스
+            </td>
+        </tr>
+        <tr>
+            <td>인공지능</td>
+            <td>인공지능 학습을 위한 멀티 모달리티 데이터셋 구성/제공 서비스 및 지식 그래프 기반 데이터 관계 분석 기술을 활용하는
+                인공지능 의사결정 서비스
+            </td>
+        </tr>
+        <tr>
+            <td>마케팅</td>
+            <td>고객 트랜잭션, 구매 패턴, 인구 통계등 다종 소스로부터 수집되는 고객 데이터를 액티브 메타데이터 기반으로 통합/분석하여
+                마케팅의 효율성을 개선하는 서비스
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>실증 사례</h2>
+    <div class="context1">
+        수요 분야 중 마케팅과 의료 분야를 대상으로 수요기관 연계 실증을 진행하고 있습니다.<br>
+        두 사례 모두 기관 보유 데이터(1st)와 외부 써드파티 데이터(3rd)를 액티브 메타데이터 기반으로 연결해, 현장 사용자의 의사결정에 활용합니다.
+    </div>
+    <table>
+        <colgroup>
+            <col style="width:140px;">
+            <col style="width:auto;">
+            <col style="width:auto;">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>구분</th>
+            <th>방송 광고 추천 API</th>
+            <th>맞춤형 건강정보 제공 서비스</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>분야 / 수요기관</td>
+            <td>마케팅 / SBSi</td>
+            <td>의료 / 연세의료원</td>
+        </tr>
+        <tr>
+            <td>사용자</td>
+            <td>광고 집행 담당자</td>
+            <td>의료진</td>
+        </tr>
+        <tr>
+            <td>입력 → 출력</td>
+            <td>광고 키워드 → 타겟 성별·연령 비중</td>
+            <td>환자 암종 → 암종별 건강정보 후보</td>
+        </tr>
+        <tr>
+            <td>진행 현황</td>
+            <td>API 개발</td>
+            <td>목업 화면 개발 완료, 실증 진행 중</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>사례 1. 방송 광고 추천 API</h3>
+    <div class="context1">
+        시청 로그만으로는 변화하는 소비 트렌드를 반영하기 어렵습니다. 쇼핑 트렌드 데이터를 결합해 광고 키워드별 타겟 성별·연령을 API로 제공합니다.
+    </div>
+    <table>
+        <colgroup>
+            <col style="width:90px;">
+            <col style="width:auto;">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>구분</th>
+            <th>데이터</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1st</td>
+            <td>시청 로그, 광고주 브랜드(업종 키워드), 방송 주요 장면 키워드</td>
+        </tr>
+        <tr>
+            <td>3rd</td>
+            <td>쇼핑 카테고리별 성별·연령 트렌드 (주간 자동 수집)</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="context1">
+        <b>처리 흐름</b> : 수집·변환 → 회차별 시청 비율 집계 → 매핑표로 키워드·카테고리 연결 후 가중 결합 → API 제공<br><br>
+        <b>액티브 메타데이터 적용</b><br>
+        - 써드파티 쇼핑 데이터를 자체 수집기로 주간 갱신<br>
+        - 매핑표로 광고 품목과 쇼핑 카테고리를 의미적으로 연결<br>
+    </div>
+
+    <h3>사례 2. 맞춤형 건강정보 제공 서비스</h3>
+    <div class="context1">
+        의료진이 환자 암종에 맞는 건강정보를 매번 찾기 어려운 문제를 해결합니다. 영상·웹 건강정보를 수집해 암종별로 연결하고, 화면에서 선택해 제공할 수 있도록 합니다.
+    </div>
+    <table>
+        <colgroup>
+            <col style="width:90px;">
+            <col style="width:auto;">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>구분</th>
+            <th>데이터</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1st</td>
+            <td>암종별 건강정보 큐레이션 출처, 환자 암종 정보</td>
+        </tr>
+        <tr>
+            <td>3rd</td>
+            <td>의료기관 채널 영상 메타정보 (주간 자동 수집), 웹 건강정보</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="context1">
+        <b>처리 흐름</b> : 원천 데이터 수집 → 암종 키워드 기반 매핑 → 조회·상세·편집·출력·등록 화면 제공 (실증 범위: 5대암)<br><br>
+        <b>액티브 메타데이터 적용</b><br>
+        - 의료기관 채널 영상 메타정보를 자체 수집기로 주간 갱신<br>
+        - 환자 암종(1st)과 건강정보(3rd)를 암종 키워드로 연결<br>
+    </div>
+
+    <h3>GitHub 저장소</h3>
+    <div class="context1">
+        <a href="https://github.com/ThirdActiveDataExTech" target="_blank" style="color: #3498db; text-decoration: none; font-size: 1.2em;">
+            <img class="basic-logo" src="/css/2016_style/img/github_icon.png" alt="GitHub Repository" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 10px;">
+            https://github.com/ThirdActiveDataExTech
+        </a>
+    </div>
+
+</div>
+
+<style>
+    /* 페이지별 고유 스타일 */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+        background: #f8f9fa;
+        font-weight: 600;
+        color: #333333;
+    }
+
+    tr:hover {
+        background: #f8f9fa;
+    }
+</style>
+</body>
